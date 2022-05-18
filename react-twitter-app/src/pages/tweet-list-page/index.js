@@ -54,6 +54,7 @@ const TweetListPage = () => {
  const [page, setPage] = useState(1)
  const [perPage, setPerPage] = useState(50)
  const [total, setTotal] = useState(0)
+ const [pageCount, setPageCount] = useState(0)
 
  async function fetchTweets (opts) {
   let response = await getTweets(opts)
@@ -71,6 +72,7 @@ const TweetListPage = () => {
   setPage(response.data.page - 1)
   setPerPage(response.data.perPage)
   setTotal(response.data.totalCount)
+  setPageCount(Math.ceil(response.data.totalCount/response.data.perPage))
  }
 
  useEffect(() => {
@@ -124,7 +126,7 @@ const TweetListPage = () => {
     />
    </div>
    <div className="mt-6">
-    <Table columns={columns} data={rows} fetchData={fetchTweets} pageCount={total}/>
+    <Table columns={columns} data={rows} fetchData={fetchTweets} pageCount={pageCount}/>
    </div>
   </div>
  )

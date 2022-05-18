@@ -15,9 +15,9 @@ function GlobalFilter ({
                         preGlobalFilteredRows,
                         globalFilter,
                         setGlobalFilter,
-                        totalCount
+                        pageCount
                        }) {
- const count = totalCount
+ const count = pageCount
  const [value, setValue] = useState(globalFilter)
  const onChange = useAsyncDebounce(value => {
   setGlobalFilter({search: (value || undefined)})
@@ -164,7 +164,7 @@ function Table ({columns, data, fetchData, pageCount: controlledPageCount,}) {
      globalFilter={globalFilter}
      // setGlobalFilter={setGlobalFilter}
      setGlobalFilter={fetchData}
-     totalCount={controlledPageCount}
+     pageCount={controlledPageCount}
     />
     {headerGroups.map((headerGroup) =>
      headerGroup.headers.map((column) =>
