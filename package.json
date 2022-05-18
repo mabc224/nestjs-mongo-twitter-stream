@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:web:dev": "cd react-twitter-app && npm i && npm run build",
-    "build:server:dev": "cd nestjs-mongo-twitter && npm i && npm run build",
-    "build": "npm run-script build:web:dev && npm run-script build:server:dev",
+    "build:web:prod": "cd react-twitter-app && npm i && npm run build",
+    "build:server:prod": "cd nestjs-mongo-twitter && npm i && npm run build",
+    "build": "npm run-script build:web:prod && npm run-script build:server:prod",
     "start:dev:web": "cd react-twitter-app && npm run start",
     "start:dev:server": "cd nestjs-mongo-twitter && npm run start:dev",
     "start:dev": "cd react-twitter-app && npm run start && cd nestjs-mongo-twitter && npm run start:dev",
