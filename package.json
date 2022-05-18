@@ -5,7 +5,7 @@
   "scripts": {
     "build:web:prod": "cd react-twitter-app && npm i && npm run build && cd ..",
     "build:server:prod": "cd nestjs-mongo-twitter && npm i && npm run build && cd ..",
-    "build": "npm run-script build:web:prod && npm run-script build:server:prod && pwd",
+    "build": "npm run-script build:web:prod && npm run-script build:server:prod",
     "start:dev:web": "cd react-twitter-app && npm run start",
     "start:dev:server": "cd nestjs-mongo-twitter && npm run start:dev",
     "start:dev": "cd react-twitter-app && npm run start && cd nestjs-mongo-twitter && npm run start:dev",
