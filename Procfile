@@ -1,1 +1,1 @@
-worker: cd nestjs-mongo-twitter && npm run start:prod
+web: npm run start
