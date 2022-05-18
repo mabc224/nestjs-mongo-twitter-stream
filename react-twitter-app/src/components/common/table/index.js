@@ -34,7 +34,7 @@ function GlobalFilter ({
      setValue(e.target.value)
      onChange(e.target.value)
     }}
-    placeholder={`put text here to records...`}
+    placeholder={`put text here to search records...`}
    />
   </label>
  )
