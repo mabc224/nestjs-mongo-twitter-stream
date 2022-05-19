@@ -10,7 +10,7 @@
     "start:dev:server": "cd nestjs-mongo-twitter && npm run start:dev",
     "start:dev": "cd react-twitter-app && npm run start && cd nestjs-mongo-twitter && npm run start:dev",
     "start:prod": "npm run-script build && cd nestjs-mongo-twitter && npm run start:prod",
-    "start": "npm run-script start:prod  -p $PORT"
+    "start": "npm run-script start:prod"
   },
   "author": "Arsalan Bilal <mabc224@gmail.com>",
   "license": "ISC",

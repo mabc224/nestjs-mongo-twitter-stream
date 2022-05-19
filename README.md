@@ -25,7 +25,6 @@ $ npm install
 $ npm run start
 Then visit `localhost:3000` in your browser.
 ````
-Then visit `localhost:3000` in your browser.
 
 
 ### Running the WebApp in Production mode
@@ -34,8 +33,9 @@ $ git clone https://github.com/mabc224/nestjs-mongo-twitter-stream.git
 $ cd nestjs-mongo-twitter-stream
 
 Add `.env` file with environment variables for `nestjs-mongo-twitter` &  `react-twitter-app` directories. You can check `.env_example` inside each directory
+Don't forget to set `NODE_ENV=production` inside env files
 
-$ npm run-script start:prod
+$ npm run-script start
 ````
 Then visit `localhost:4000` in your browser.
 

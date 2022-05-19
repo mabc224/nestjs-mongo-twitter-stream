@@ -52,7 +52,7 @@ async function bootstrap() {
   // setting headers
   app.enableCors({
     // allow CORS from '*' only for local and dev
-    origin: process.env.NODE_ENV === 'production' ? /.*\.herokuapp\.com$/ : '*',
+    origin: process.env.NODE_ENV === 'production' ? /.*\.herokuapp\.com$/i : '*',
   });
   app.disable('x-powered-by');
   app.disable('etag');
